@@ -377,14 +377,15 @@ text-align: center;
 line-height: 1.18;
 letter-spacing: 0.03em;
 text-align: center;
+margin-bottom:28px;
 color: var(--secondary-text-color);
+
 }
 
 .social-list {
     
     display: flex;
-    
-    width: 206px;
+        width: 206px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -397,12 +398,14 @@ color: var(--secondary-text-color);
 
 .social-item {
     width: 44px;
-        padding-top: 12px;
-    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+            /* padding-top: 12px; */
+    /* padding-bottom: 12px;
     padding-right: 12px;
-    padding-left: 12px;
-    
-    
+    padding-left: 12px; */
     }
 
 .social-list li:not(:last-child) {
@@ -410,8 +413,6 @@ color: var(--secondary-text-color);
     }
 
 .social-icon {
-    
-    display: block;
     color: #AFB1B8;
     width: 20px;
     height: 20px;
@@ -422,9 +423,8 @@ color: var(--secondary-text-color);
 fill: currentColor;
     }
 
-.social-icon:hover,
-.social-icon:focus {
-display: block;
+.social-item:hover,
+.social-item:focus {
 
 background-color: var(--primary-accent-color);
 color: #FFFFFF;
