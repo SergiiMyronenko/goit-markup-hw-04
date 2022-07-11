@@ -385,7 +385,8 @@ color: var(--secondary-text-color);
 .social-list {
     
     display: flex;
-        width: 206px;
+    width: 206px;
+    justify-content: center;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -398,14 +399,8 @@ color: var(--secondary-text-color);
 
 .social-item {
     width: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-            /* padding-top: 12px; */
-    /* padding-bottom: 12px;
-    padding-right: 12px;
-    padding-left: 12px; */
+    height: 44px;
+ 
     }
 
 .social-list li:not(:last-child) {
@@ -414,22 +409,30 @@ color: var(--secondary-text-color);
 
 .social-icon {
     color: #AFB1B8;
-    width: 20px;
-    height: 20px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%
-           }
-
-.social-svg {
-fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
     }
 
-.social-item:hover,
-.social-item:focus {
+.social-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    }
+
+.social-icon:hover,
+.social-icon:focus {
 
 background-color: var(--primary-accent-color);
 color: #FFFFFF;
 box-shadow:
-0 0 0 12px  var(--primary-accent-color); 
+0 0 0 12px  var(--primary-accent-color);
+border-radius: 12px;
 }
 
 /* SECTION CLIENTS */
@@ -443,29 +446,33 @@ box-shadow:
     margin-right: 30px;
 }
 
-.clients-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    min-height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;}
-
+    
+  
+.clients-link {
+        display: flex;
+        width: 170px;
+        min-height: 92px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        color: #AFB1B8;
+        }
+    
     .clients-icon {
-        fill: #AFB1B8;
-    }
+        fill: currentColor;
+            }
 
-.clients-list-item:hover,
-.clients-list-item:focus {
-
-    border: 1px solid var(--primary-accent-color);
-
+.clients-link:hover {
+border: 1px solid var(--primary-accent-color);
+fill: var(--primary-accent-color);
+color: var(--primary-accent-color);
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-link:focus {
+    border: 1px solid var(--primary-accent-color);
     fill: var(--primary-accent-color);
+    color: var(--primary-accent-color);
 }
 
 
@@ -670,3 +677,4 @@ color: var(--secondary-text-color);
  .portfolio-cards-link {
     text-decoration: none;
  }
+saved 10:50
