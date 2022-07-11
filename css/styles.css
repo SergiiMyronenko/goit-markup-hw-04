@@ -398,9 +398,9 @@ color: var(--secondary-text-color);
 }
 
 .social-item {
-    width: 44px;
+    /* width: 44px;
     height: 44px;
- 
+  */
     }
 
 .social-list li:not(:last-child) {
@@ -411,7 +411,7 @@ color: var(--secondary-text-color);
     color: #AFB1B8;
     width: 44px;
     height: 44px;
-    border-radius: 50%
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,12 +427,12 @@ color: var(--secondary-text-color);
 
 .social-icon:hover,
 .social-icon:focus {
-
-background-color: var(--primary-accent-color);
 color: #FFFFFF;
+background-color: var(--primary-accent-color);
+/* 
 box-shadow:
 0 0 0 12px  var(--primary-accent-color);
-border-radius: 12px;
+border-radius: 12px; */
 }
 
 /* SECTION CLIENTS */
@@ -507,7 +507,7 @@ align-items:baseline;
         color: white;
 }
 
-.footer-social-item {
+/* .footer-social-item {
     width: 44px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -515,7 +515,7 @@ align-items:baseline;
     padding-left: 12px;
     border-radius: 22px;
     
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); */
 
 }
 
@@ -677,4 +677,4 @@ color: var(--secondary-text-color);
  .portfolio-cards-link {
     text-decoration: none;
  }
-saved 10:50
+saved 16:14
